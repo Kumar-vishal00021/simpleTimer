@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./timer/style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Countdown Timer</h1>
+        <!-- show an input field that will take number in minute -->
+        <input type="number"id="input" placeholder="Enter Time in Minute" min="1">
+
+        <!-- a section that will display countdown  -->
+        <div id="countdownDisplay">00:00</div>
+
+        <!-- button for starting the timer  -->
+        <button id="startBtn">Start</button>
+
+        <!-- buttton for stop the timer -->
+        <button id="stopBtn" disabled>Pause</button>
+
+        <!-- button for reset the time count and
+             it will be disabled tile user not start timer -->
+        <button id="resetBtn" disabled>Reset</button>
+
+        <!-- optional section for error message -->
+        <div id="errorMsg" class="hidden"></div>
+    </div>
+
+    <script src="./timer/script.js"></script>
+
+
+
+    
+</body>
+</html>
